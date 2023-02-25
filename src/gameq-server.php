@@ -10,12 +10,12 @@ $requestMethod = $_SERVER["REQUEST_METHOD"];
 $uri = trim($uri, '/');
 $uri = explode('/', $uri);
 
-if ($uri[0] !== 'src') {
-    header("HTTP/1.1 404 Not Found");
-    exit();
-} else {
-    $uri = array_slice($uri, 1);
-}
+// if ($uri[0] !== 'src') {
+//     header("HTTP/1.1 404 Not Found");
+//     exit();
+// } else {
+//     $uri = array_slice($uri, 1);
+// }
 
 
 if ($requestMethod !== 'GET') {
