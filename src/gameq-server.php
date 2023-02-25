@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: application/json");
 
-require_once('./GameQ-3.1.0/src/GameQ/Autoloader.php');
+require_once('./GameQ/Autoloader.php');
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $requestMethod = $_SERVER["REQUEST_METHOD"];
@@ -9,14 +9,6 @@ $requestMethod = $_SERVER["REQUEST_METHOD"];
 
 $uri = trim($uri, '/');
 $uri = explode('/', $uri);
-
-// if ($uri[0] !== 'src') {
-//     header("HTTP/1.1 404 Not Found");
-//     exit();
-// } else {
-//     $uri = array_slice($uri, 1);
-// }
-
 
 if ($requestMethod !== 'GET') {
     header("HTTP/1.1 405 Method Not Allowed");
