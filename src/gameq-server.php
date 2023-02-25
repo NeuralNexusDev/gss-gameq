@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: application/json");
 
-require_once('./GameQ/Autoloader.php');
+require_once('./Autoloader.php');
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $requestMethod = $_SERVER["REQUEST_METHOD"];
