@@ -1,0 +1,11 @@
+---
+version: "3.8"
+services:
+  NN_game-server-status-gameq:
+    image: p0t4t0sandwich/neuralnexus:game-server-status-gameq
+    container_name: NN_game-server-status-gameq
+    environment:
+      - TZ=UTC
+    ports:
+      - 3013:80
+    restart: unless-stopped
