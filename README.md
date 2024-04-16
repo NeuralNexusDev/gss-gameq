@@ -1,2 +1,3 @@
-# game-server-status-gameq
-REST wrapper for the GameQ PHP library
+# gss-gameq
+
+A simple REST wrapper for the GameQ game status library

@@ -1,0 +1,21 @@
+{
+    "name": "neuralnexus/gss-gameq",
+    "description": "A simple REST wrapper for the GameQ game status library",
+    "type": "project",
+    "require": {
+        "austinb/gameq": "~3.1"
+    },
+    "license": "GPL3",
+    "autoload": {
+        "psr-4": {
+            "Neuralnexus\\GssGameq\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "p0t4t0sandwich",
+            "email": "p0t4t0sandwich@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
